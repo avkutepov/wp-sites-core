@@ -37,6 +37,20 @@ return [
                     ],
                 ],
             ],
+            [
+                'key' => 'field_faq_enable_schema',
+                'label' => 'Выводить Schema.org разметку',
+                'name' => 'faq_enable_schema',
+                'type' => 'true_false',
+                'default_value' => 1,
+                'ui' => 1,
+                'ui_on_text' => 'Да',
+                'ui_off_text' => 'Нет',
+                'instructions' => 'Включает вывод микроразметки Schema.org для FAQ. Помогает Google отображать вопросы в результатах поиска.',
+                'wrapper' => [
+                    'width' => '100',
+                ],
+            ],
         ],
     ],
 ];

@@ -20,9 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Получаем данные из ACF
 $faq_title = get_sub_field( 'faq_title' );
 $faq_items = get_sub_field( 'faq_items' );
+$faq_enable_schema = get_sub_field( 'faq_enable_schema' );
 
-// Выводим Schema.org разметку для FAQ
-main_theme_faq_schema( $faq_items );
+// Выводим Schema.org разметку для FAQ если галочка включена
+if ( $faq_enable_schema && $faq_items ) {
+    main_theme_faq_schema( $faq_items );
+}
 ?>
 
 <section class="faq-block">
