@@ -28,6 +28,18 @@ return [
                 'prefix_label' => 0,
                 'prefix_name' => 0,
             ],
+            [
+                'key' => 'field_hero_bg_image',
+                'label' => 'Фоновое изображение',
+                'name' => 'hero_bg_image',
+                'type' => 'image',
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+                'wrapper' => [
+                    'width' => '100',
+                ],
+            ],
         ],
     ],
 ];
