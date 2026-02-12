@@ -35,6 +35,18 @@ acf_add_local_field_group([
             ],
         ],
         [
+            'key' => 'field_cta_desc',
+            'label' => 'Описание',
+            'name' => 'cta_desc',
+            'type' => 'text',
+            'required' => 0,
+            'default_value' => '',
+            'placeholder' => '',
+            'wrapper' => [
+                'width' => '100',
+            ],
+        ],
+        [
             'key' => 'field_cta_url',
             'label' => 'Ссылка',
             'name' => 'cta_url',

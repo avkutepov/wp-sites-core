@@ -14,6 +14,12 @@
     <div class="entry-content">
         <?php
         if ( is_singular() ) {
+            // Выводим ACF блоки если они есть
+            get_template_part( 'template-parts/blocks/renderer', null, array(
+                'field_name' => 'page_blocks',
+                'post_id'    => get_the_ID(),
+                'post_type'  => get_post_type(),
+            ) );
             the_content();
         } else {
             the_excerpt();
