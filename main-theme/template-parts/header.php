@@ -22,7 +22,7 @@
                     'theme_location' => 'primary',
                     'container'      => false,
                     'menu_class'     => 'menu',
-                    'fallback_cb'    => 'wp_page_menu',
+                    'fallback_cb'    => false,
                 )
             );
             ?>
