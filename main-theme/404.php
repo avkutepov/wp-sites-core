@@ -5,7 +5,6 @@
         <section class="error-404 not-found">
             <h1><?php esc_html_e( 'Page not found', 'main-theme' ); ?></h1>
             <p><?php esc_html_e( 'The page you requested does not exist or has moved.', 'main-theme' ); ?></p>
-            <?php get_search_form(); ?>
         </section>
     </div>
 </main>
