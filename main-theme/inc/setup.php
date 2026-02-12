@@ -40,3 +40,8 @@ function main_theme_widgets_init() {
         )
     );
 }
+
+/**
+ * Убирает префиксы "Категория:", "Метка:" и т.д. из заголовков архивов
+ */
+add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );
